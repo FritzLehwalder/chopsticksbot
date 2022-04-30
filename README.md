@@ -1,7 +1,4 @@
 # chopsticksbot
-discord.js bot for playing the finger game chopsticks
+all possible game-states for the hand game chopsticks.
 
-.env contains discord token
-run combos.js to generate output.txt for the bot
-
-WIP
+run combos.js to generate output.txt
