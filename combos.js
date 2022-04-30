@@ -37,7 +37,7 @@ while(pos4 <= 4){
         iphand1 += aphand1
         if(iphand1 > 4) iphand1 -= 5;
         let gamestate = `${aphand1}${aphand2}${iphand1}${iphand2}`
-        moves += `\"left hand hit opponent left hand\": \"${gamestate}\",\n`
+        moves += `\"**left hand** __attack__ opponent **left hand**\": \"${gamestate}\",\n`
         totalMoves += 1
     }
     if(pos4 > 0 && pos1 > 0){
@@ -48,7 +48,7 @@ while(pos4 <= 4){
         iphand2 += aphand1
         if(iphand2 > 4) iphand2 -= 5;
         let gamestate = `${aphand1}${aphand2}${iphand1}${iphand2}`
-        moves += `\"left hand hit opponent right hand\": \"${gamestate}\",\n`
+        moves += `\"**left hand** __attack__ opponent **right hand**\": \"${gamestate}\",\n`
         totalMoves += 1
     }
     if(pos3 > 0 && pos2 > 0){
@@ -59,7 +59,7 @@ while(pos4 <= 4){
         iphand1 += aphand2
         if(iphand1 > 4) iphand1 -= 5;
         let gamestate = `${aphand1}${aphand2}${iphand1}${iphand2}`
-        moves += `\"right hand hit opponent left hand\": \"${gamestate}\",\n`
+        moves += `\"**right hand** __attack__ opponent **left hand**\": \"${gamestate}\",\n`
         totalMoves += 1
     }
     if(pos3 > 0 && pos1 > 0){
@@ -70,7 +70,7 @@ while(pos4 <= 4){
         iphand2 += aphand2
         if(iphand2 > 4) iphand2 -= 5;
         let gamestate = `${aphand1}${aphand2}${iphand1}${iphand2}`
-        moves += `\"right hand hit opponent right hand\": \"${gamestate}\",\n`
+        moves += `\"**right hand** __attack__ opponent **right hand**\": \"${gamestate}\",\n`
         totalMoves += 1
     }
     if(pos4 >= 1){
@@ -82,7 +82,7 @@ while(pos4 <= 4){
         aphand2 += 1;
         if(aphand2 > 4) aphand2 -= 5;
         let gamestate = `${aphand1}${aphand2}${iphand1}${iphand2}`
-        moves += `\"swap 1 from left hand to right hand\": \"${gamestate}\",\n`
+        moves += `\"__transfer__ **1** from **left hand** to **right hand**\": \"${gamestate}\",\n`
         totalMoves += 1
     }
     if(pos4 >= 2){
@@ -94,7 +94,7 @@ while(pos4 <= 4){
         aphand2 += 2;
         if(aphand2 > 4) aphand2 -= 5;
         let gamestate = `${aphand1}${aphand2}${iphand1}${iphand2}`
-        moves += `\"swap 2 from left hand to right hand\": \"${gamestate}\",\n`
+        moves += `\"__transfer__ **2** from **left hand** to **right hand**\": \"${gamestate}\",\n`
         totalMoves += 1
     }
     if(pos4 >= 3){
@@ -106,7 +106,7 @@ while(pos4 <= 4){
         aphand2 += 3;
         if(aphand2 > 4) aphand2 -= 5;
         let gamestate = `${aphand1}${aphand2}${iphand1}${iphand2}`
-        moves += `\"swap 3 from left to right hand\": \"${gamestate}\",\n`
+        moves += `\"__transfer__ **3** from **left hand** to **right hand**\": \"${gamestate}\",\n`
         totalMoves += 1
     }
     if(pos4 == 4){
@@ -118,7 +118,7 @@ while(pos4 <= 4){
         aphand2 += 4;
         if(aphand2 > 4) aphand2 -= 5;
         let gamestate = `${aphand1}${aphand2}${iphand1}${iphand2}`
-        moves += `\"swap 4 from left hand to right hand\": \"${gamestate}\",\n`
+        moves += `\"__transfer__ **4** from **left hand** to **right hand**\": \"${gamestate}\",\n`
         totalMoves += 1
     }
     if(pos3 >= 1){
@@ -130,7 +130,7 @@ while(pos4 <= 4){
         aphand1 += 1;
         if(aphand1 > 4) aphand1 -= 5;
         let gamestate = `${aphand1}${aphand2}${iphand1}${iphand2}`
-        moves += `\"swap 1 from right hand to left hand\": \"${gamestate}\",\n`
+        moves += `\"__transfer__ **1** from **right hand** to **left hand**\": \"${gamestate}\",\n`
         totalMoves += 1
     }
     if(pos3 >= 2){
@@ -142,7 +142,7 @@ while(pos4 <= 4){
         aphand1 += 2;
         if(aphand1 > 4) aphand1 -= 5;
         let gamestate = `${aphand1}${aphand2}${iphand1}${iphand2}`
-        moves += `\"swap 2 from right hand to left hand\": \"${gamestate}\",\n`
+        moves += `\"__transfer__ **2** from **right hand** to **left hand**\": \"${gamestate}\",\n`
         totalMoves += 1
     }
     if(pos3 >= 3){
@@ -154,7 +154,7 @@ while(pos4 <= 4){
         aphand1 += 3;
         if(aphand1 > 4) aphand1 -= 5;
         let gamestate = `${aphand1}${aphand2}${iphand1}${iphand2}`
-        moves += `\"swap 3 from right hand to left hand\": \"${gamestate}\",\n`
+        moves += `\"__transfer__ **3** from **right hand** to **left hand**\": \"${gamestate}\",\n`
         totalMoves += 1
     }
     if(pos3 == 4){
@@ -166,7 +166,7 @@ while(pos4 <= 4){
         aphand1 += 4;
         if(aphand1 > 4) aphand1 -= 5;
         let gamestate = `${aphand1}${aphand2}${iphand1}${iphand2}`
-        moves += `\"swap 4 from right hand to left hand\": \"${gamestate}\",\n`
+        moves += `\"__transfer__ **4** from **right hand** to **left hand**\": \"${gamestate}\",\n`
         totalMoves += 1
     }
 
